@@ -6,7 +6,7 @@ public class Proyecto_Parcial {
     public static void main(String[] args) {
         //Declaracion de variables
         String empleado;
-        double ht, th, sb, d, sn;
+        double ht, th, sb, d, sn, sm;
         //creando el objeto de lectura
         Scanner lectura = new Scanner (System.in);
         //Entrada de datos
@@ -20,9 +20,11 @@ public class Proyecto_Parcial {
         sb = ht * th;
         d = sb * 0.13;
         sn = sb - d;
+        sm = sb * 0.09;
         //Salida de datos
         System.out.println("Sueldo Bruto: " + sb);
         System.out.println("Descuento: " + d);
         System.out.println("Sueldo Neto: " + sn);
+        System.out.println("Seguro medico: " + sm);
     } // Fin del método
 } // Fin del programa
